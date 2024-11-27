@@ -12,7 +12,6 @@ body {
 }
 
 header {
-  width: 100%;
   margin: 20px 20px;
   padding: 30px;
   background-color: #fef7e2;
@@ -20,7 +19,7 @@ header {
   display: flex;
   flex-wrap: wrap;
   text-align: center;
-  justify-content: space-evenly;
+  justify-content: center;
   border-radius: 100px;
 }
 
@@ -56,6 +55,8 @@ nav {
   display: flex;
   flex-wrap: wrap;
   justify-content: space-around;
+  width: 100%;
+  flex-basis: 95%;
 }
 
 nav button {
@@ -66,7 +67,271 @@ nav button {
   font-weight: 600;
 }
 
+main {
+  margin: 20px;
+}
+
+h1 {
+  font-size: 40px;
+  font-weight: 800;
+}
+
+.tile {
+  border-radius: 80px;
+  background-color: #fef7e2;
+  margin-bottom: 40px;
+}
+
+.tile img {
+  border-top-left-radius: 80px;
+  border-top-right-radius: 80px;
+}
+
+.specs {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  margin: 20px 0;
+}
+
+.name h3 {
+  margin: 0;
+  margin-top: 5px;
+}
+.name p {
+  margin: 0;
+  margin-bottom: 10px;
+}
+
+.priceKg p {
+  font-size: 20px;
+}
+
+.tileBtn button {
+  margin-bottom: 20px;
+  width: 50%;
+  height: 50px;
+  border-radius: 50px;
+  border-style: none;
+  background-color: #ffdf7e;
+  font-size: 20px;
+  font-weight: 600;
+}
+
 .tileImg img,
 section img {
-  max-width: 80%;
+  width: 100%;
+}
+
+section h2 {
+  font-size: 32px;
+  font-weight: 800;
+}
+
+section div {
+  background-color: #fef7e2;
+  padding: 40px 50px;
+  border-radius: 40px;
+}
+
+section div h3,
+section div p {
+  text-align: left;
+}
+
+section div h3 {
+  font-size: 24px;
+  font-weight: 800;
+}
+
+section div p {
+  font-size: 32px;
+}
+
+@media screen and (min-width: 576px) {
+  header {
+    margin: 0;
+    padding: 20px 5px;
+    border-radius: 0;
+    flex-wrap: nowrap;
+    position: sticky;
+    top: 0px;
+  }
+
+  nav button {
+    margin: 5px;
+  }
+
+  nav {
+    flex-wrap: nowrap;
+    justify-content: center;
+    align-items: center;
+  }
+
+  #button1,
+  #button2,
+  #button3,
+  #button4,
+  #LogoBtn p {
+    flex-basis: 17%;
+    font-size: 16px;
+  }
+  #button1 {
+    order: 1;
+  }
+  #button2 {
+    order: 2;
+  }
+
+  #logoBtn {
+    order: 3;
+    flex-basis: 32%;
+    height: 100px;
+  }
+  #button3 {
+    order: 4;
+  }
+  #button4 {
+    order: 5;
+  }
+
+  #tiles {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    align-items: center;
+  }
+
+  .tile {
+    flex-basis: 47%;
+  }
+
+  .tile5 {
+    display: none;
+  }
+
+  h1,
+  section h2,
+  section h3 {
+    text-align: left;
+  }
+
+  section div {
+    padding: 20px;
+  }
+
+  section div p {
+    font-size: 20px;
+  }
+
+  section div img {
+    margin-bottom: 20px;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  #fullpage {
+    display: flex;
+  }
+
+  header {
+    margin: 0;
+    padding: 20px 5px;
+    border-radius: 0;
+    flex-wrap: nowrap;
+    position: sticky;
+    top: 0px;
+    flex-basis: 30%;
+  }
+
+  main {
+    flex-basis: 70%;
+  }
+
+  nav button {
+    margin: 5px;
+  }
+
+  nav {
+    flex-wrap: nowrap;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
+  #button1,
+  #button2,
+  #button3,
+  #button4,
+  #LogoBtn p {
+    flex-basis: 17%;
+    font-size: 16px;
+  }
+  #button1 {
+    order: 2;
+  }
+  #button2 {
+    order: 3;
+  }
+
+  #logoBtn {
+    order: 1;
+    flex-basis: 32%;
+    height: 100px;
+  }
+  #button3 {
+    order: 4;
+  }
+  #button4 {
+    order: 5;
+  }
+
+  #tiles {
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: space-evenly;
+    align-items: center;
+  }
+
+  .tile {
+    flex-basis: 47%;
+    margin: 10px;
+    border-radius: 50px;
+  }
+
+  .tile img {
+    border-top-left-radius: 50px;
+    border-top-right-radius: 50px;
+  }
+
+  .tileBtn button {
+    width: 70%;
+  }
+
+  .specs {
+    margin: 20px;
+  }
+
+  .tile4,
+  .tile5 {
+    display: none;
+  }
+
+  h1,
+  section h2,
+  section h3 {
+    text-align: left;
+  }
+
+  section div {
+    padding: 20px;
+  }
+
+  section div p {
+    font-size: 20px;
+  }
+
+  section div img {
+    margin-bottom: 20px;
+  }
 }
