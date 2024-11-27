@@ -242,21 +242,25 @@ section div p {
     position: sticky;
     top: 0px;
     flex-basis: 30%;
+    height: 100vh;
   }
 
   main {
-    flex-basis: 70%;
+    flex-basis: 80%;
   }
 
   nav button {
     margin: 5px;
+    width: 100%;
   }
 
   nav {
+    display: block;
     flex-wrap: nowrap;
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    height: 80vh;
   }
 
   #button1,
@@ -267,6 +271,26 @@ section div p {
     flex-basis: 17%;
     font-size: 16px;
   }
+
+  .logo {
+    width: 40px;
+  }
+
+  #logoBtn p {
+    margin-left: 10px;
+    font-size: 24px;
+  }
+
+  #button1,
+  #button2,
+  #button3,
+  #button4,
+  #LogoBtn {
+    height: 100px;
+    margin: 20px 0;
+    font-size: 20px;
+  }
+
   #button1 {
     order: 2;
   }
@@ -276,8 +300,6 @@ section div p {
 
   #logoBtn {
     order: 1;
-    flex-basis: 32%;
-    height: 100px;
   }
   #button3 {
     order: 4;
@@ -312,6 +334,18 @@ section div p {
     margin: 20px;
   }
 
+  .name h3 {
+    font-size: 12px;
+  }
+
+  .name p {
+    font-size: 10px;
+  }
+
+  .priceKg p {
+    font-size: 16px;
+  }
+
   .tile4,
   .tile5 {
     display: none;
@@ -333,5 +367,39 @@ section div p {
 
   section div img {
     margin-bottom: 20px;
+  }
+}
+
+@media screen and (min-width: 992px) {
+  .tile4 {
+    display: block;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .tile5 {
+    display: block;
+  }
+
+  #news {
+    display: flex;
+  }
+
+  .newsDiv {
+    padding-top: 0;
+  }
+
+  #news img {
+    width: 50%;
+    height: 30vh;
+  }
+
+  .newsDiv h3 {
+    font-size: 16px;
+    margin-top: 0;
+  }
+
+  .newsDiv p {
+    font-size: 12px;
   }
 }
